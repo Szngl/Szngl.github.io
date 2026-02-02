@@ -188,3 +188,57 @@ h1{font-size:44px; line-height:1.1; margin:0 0 12px}
     margin-top:10px;
 }
 .footer-row{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap}
+
+/* Team Card Styles */
+.team-card{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+.team-header{
+    margin-bottom:4px;
+}
+.team-header h3{
+    margin:0;
+}
+.team-member{
+    display:flex;
+    gap:14px;
+    align-items:center;
+}
+.team-avatar{
+    width:56px;
+    height:56px;
+    border-radius:14px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:18px;
+    letter-spacing:.5px;
+    box-shadow: 0 0 24px rgba(110,168,255,.25);
+    flex-shrink:0;
+}
+.team-info{
+    flex:1;
+}
+.team-name{
+    margin:0 0 4px;
+    font-size:17px;
+    font-weight:700;
+}
+.team-role{
+    font-size:13px;
+    color:var(--accent);
+    font-weight:600;
+    margin-bottom:3px;
+}
+.team-title{
+    font-size:13px;
+}
+.team-divider{
+    height:1px;
+    background:var(--line);
+    margin:4px 0;
+}
