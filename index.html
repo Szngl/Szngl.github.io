@@ -3,229 +3,205 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ZNGL — Indie Game Studio</title>
-    <meta name="description" content="ZNGL — oyun projeleri, ekip ve gelişim güncellemeleri." />
-    <link rel="stylesheet" href="style.css" />
+    <title>ZNGL Studio</title>
+    <meta name="description" content="ZNGL — Indie game studio. Projects, updates, and devlogs." />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-<!-- Top bar -->
-<header class="topbar">
-    <a class="brand" href="#top">
-        <span class="logo">ZNGL</span>
-        <span class="tag">Indie Game Studio</span>
-    </a>
+<header class="site-header">
+    <div class="container nav">
+        <a class="brand" href="./index.html">
+            <span class="brand-dot"></span>
+            <span>ZNGL</span>
+            <span class="muted">Indie Game Studio</span>
+        </a>
 
-    <nav class="nav">
-        <a href="#projects">Projeler</a>
-        <a href="#team">Ekip</a>
-        <a href="#updates">Güncellemeler</a>
-        <a href="#contact" class="cta">İletişim</a>
-    </nav>
-
-    <button class="burger" id="burger" aria-label="Menü">
-        <span></span><span></span><span></span>
-    </button>
+        <nav class="menu">
+            <a href="#projects">Projeler</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+    </div>
 </header>
 
-<!-- Hero -->
-<main id="top" class="hero">
-    <div class="hero-content">
-        <p class="pill">🎮 Unity • PC/Mobile • Indie</p>
-        <h1>ZNGL ile oyunlar geliştiriyoruz.</h1>
-        <p class="subtitle">
-            Minimal ama güçlü: projeler, ekip, devlog ve yayıncı/iş birlikleri için tek adres.
-        </p>
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>Oyun fikirlerini <span class="glow">oynanabilir</span> hale getiriyoruz.</h1>
+                <p class="lead">
+                    ZNGL, küçük bir ekip olarak hızlı prototipleme + sağlam mekanikler yaklaşımıyla oyunlar geliştirir.
+                    Şu an aktif projemiz: <strong>Zmazer</strong>.
+                </p>
 
-        <div class="hero-actions">
-            <a class="btn primary" href="#projects">Projeleri Gör</a>
-            <a class="btn ghost" href="#contact">Mail Gönder</a>
-        </div>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#projects">Projeyi Gör</a>
+                    <a class="btn" href="./projects/zmazer.html">Zmazer Sayfası</a>
+                </div>
 
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-num">2</div>
-                <div class="stat-label">Aktif Proje</div>
+                <div class="pill-row">
+                    <span class="pill">Unity</span>
+                    <span class="pill">Prototype → Pre-Alpha</span>
+                    <span class="pill">Indie Dev</span>
+                </div>
             </div>
-            <div class="stat">
-                <div class="stat-num">Unity</div>
-                <div class="stat-label">Ana Motor</div>
-            </div>
-            <div class="stat">
-                <div class="stat-num">TR</div>
-                <div class="stat-label">İstanbul</div>
-            </div>
-        </div>
-    </div>
 
-    <div class="hero-card">
-        <div class="card-glow"></div>
-        <div class="card-inner">
-            <div class="card-title">Şu an odakta</div>
-            <div class="card-big">İzoPark</div>
-            <div class="card-desc">
-                Park yönetimi + idle tycoon. Araç akışı, servis istasyonları, ekonomi ve UI.
-            </div>
-            <div class="chip-row">
-                <span class="chip">Parking Sim</span>
-                <span class="chip">Idle</span>
-                <span class="chip">Management</span>
+            <div class="hero-card">
+                <div class="hero-card-top">
+                    <div class="badge">Aktif Proje</div>
+                    <div class="tiny muted">Son güncelleme: bugün</div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title-row">
+                        <h2 class="project-title">ZMAZER</h2>
+                        <span class="stage">Pre-Alpha</span>
+                    </div>
+
+                    <p class="muted">
+                        Maze / puzzle tabanlı, hızlı geri bildirimli oynanış. Çekirdek mekanikler tamamlanma aşamasında.
+                    </p>
+
+                    <div class="progress-block">
+                        <div class="progress-top">
+                            <span class="muted">Mekanikler</span>
+                            <strong>%40</strong>
+                        </div>
+                        <div class="progress">
+                            <div class="bar" style="width:40%"></div>
+                        </div>
+                        <div class="tiny muted" style="margin-top:8px">
+                            Tasarım / seviye / UI çalışmaları sırada.
+                        </div>
+                    </div>
+
+                    <div class="project-links">
+                        <a class="btn small" href="./projects/zmazer.html">Detaylar</a>
+                        <a class="btn small ghost" href="#contact">Bize Ulaş</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Projeler</h2>
+                <p class="muted">Aktif geliştirdiğimiz işler ve durumları.</p>
+            </div>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="card-top">
+                        <div>
+                            <h3>ZMAZER</h3>
+                            <div class="tiny muted">Pre-Alpha • Mekanikler %40</div>
+                        </div>
+                        <span class="chip">Aktif</span>
+                    </div>
+
+                    <p class="muted">
+                        Çekirdek oynanış iskeleti kuruldu. Şimdi görsel kimlik, seviye tasarımı ve UI/UX’e geçiş.
+                    </p>
+
+                    <div class="progress">
+                        <div class="bar" style="width:40%"></div>
+                    </div>
+
+                    <ul class="list">
+                        <li>✅ Core mechanics (kısmen tamam)</li>
+                        <li>⏳ Visual design (başlanacak)</li>
+                        <li>⏳ Level design (başlanacak)</li>
+                        <li>⏳ UI/UX & polish (planlı)</li>
+                    </ul>
+
+                    <div class="row">
+                        <a class="btn small primary" href="./projects/zmazer.html">Proje Sayfası</a>
+                        <span class="tiny muted">Daha fazla proje yakında.</span>
+                    </div>
+                </article>
+
+                <article class="card dashed">
+                    <h3>Yeni Proje</h3>
+                    <p class="muted">
+                        Yeni proje eklemek için sadece bir kart daha çoğaltacağız. (Admin panel gerekmiyor.)
+                    </p>
+                    <div class="tiny muted">Status: Coming Soon</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Hakkımızda</h2>
+                <p class="muted">
+                    ZNGL; hızlı prototipleme, mekanik netliği ve temiz teknik yapı odaklı ilerleyen bir indie ekiptir.
+                </p>
+            </div>
+
+            <div class="grid two">
+                <div class="card">
+                    <h3>Yaklaşım</h3>
+                    <ul class="list">
+                        <li>🎯 Önce oynanış: mekanikler netleşmeden görsele boğmuyoruz.</li>
+                        <li>🧱 Modüler yapı: sonra büyütmesi kolay bir temel kuruyoruz.</li>
+                        <li>🧪 Sık test: küçük iterasyonlarla “game feel” yükseltiyoruz.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Ekip</h3>
+                    <p class="muted">
+                        Şimdilik küçük bir ekibiz. Ekip üyeleri ve rolleri burada listelenecek.
+                    </p>
+                    <div class="tiny muted">
+                        Not: İleride “Team” bölümünü JSON’dan otomatik dolduracak hale de getirebiliriz.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-head">
+                <h2>İletişim</h2>
+                <p class="muted">Bizimle iletişime geçmek için:</p>
+            </div>
+
+            <div class="card">
+                <div class="contact-row">
+                    <div>
+                        <div class="tiny muted">E-posta</div>
+                        <div class="mono">hello@zngl.me</div>
+                    </div>
+                    <div>
+                        <div class="tiny muted">GitHub</div>
+                        <div class="mono">github.com/Szngl</div>
+                    </div>
+                </div>
+
+                <p class="tiny muted" style="margin-top:14px;">
+                    (İstersen buraya bir “contact form” da ekleriz — ama o zaman küçük bir backend / form servisi gerekir.)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <div class="tiny muted">© <span id="y"></span> ZNGL — All rights reserved.</div>
+            <div class="tiny muted">Built with GitHub Pages.</div>
+        </div>
+    </footer>
 </main>
 
-<!-- Projects -->
-<section id="projects" class="section">
-    <div class="section-head">
-        <h2>Projeler</h2>
-        <p>Öne çıkan işlerimiz ve prototipler.</p>
-    </div>
-
-    <div class="grid">
-        <article class="project">
-            <div class="thumb" data-fallback="IZ"></div>
-            <div class="p-body">
-                <h3>İzoPark</h3>
-                <p>Otopark yönetimi/simülasyon. Araç rotaları, park atama, servis ve ödeme sistemi.</p>
-                <div class="badges">
-                    <span>Unity</span><span>Mobile</span><span>Simulation</span>
-                </div>
-                <div class="links">
-                    <a href="#" class="link disabled" title="Yakında">Steam/itch.io</a>
-                    <a href="#" class="link disabled" title="Yakında">Trailer</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="project">
-            <div class="thumb" data-fallback="MZ"></div>
-            <div class="p-body">
-                <h3>Maze Prototype</h3>
-                <p>Labirent temalı hızlı prototip. Kontrol hissi, seviye denemeleri ve oyun döngüsü.</p>
-                <div class="badges">
-                    <span>Prototype</span><span>PC</span><span>Arcade</span>
-                </div>
-                <div class="links">
-                    <a href="#" class="link disabled" title="Yakında">Build</a>
-                    <a href="#" class="link disabled" title="Yakında">Devlog</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="project">
-            <div class="thumb" data-fallback="NW"></div>
-            <div class="p-body">
-                <h3>Website / Studio Kit</h3>
-                <p>ZNGL.me için portfolyo, basın kiti (press kit) ve mail altyapısı.</p>
-                <div class="badges">
-                    <span>Web</span><span>Brand</span><span>Press Kit</span>
-                </div>
-                <div class="links">
-                    <a href="#contact" class="link">İletişim</a>
-                    <a href="#updates" class="link">Güncellemeler</a>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
-
-<!-- Team -->
-<section id="team" class="section alt">
-    <div class="section-head">
-        <h2>Ekip</h2>
-        <p>Küçük ama üretken.</p>
-    </div>
-
-    <div class="team">
-        <div class="member">
-            <div class="avatar">SU</div>
-            <div>
-                <h3>Servet Uzunoğlu</h3>
-                <p class="role">Founder • Lead Developer</p>
-                <p class="mini">Unity, oyun sistemleri, UI/UX, tooling.</p>
-            </div>
-        </div>
-
-        <div class="member">
-            <div class="avatar ghost">+</div>
-            <div>
-                <h3>Yeni Üye</h3>
-                <p class="role">Game Designer (yakında)</p>
-                <p class="mini">Ekip genişliyor. Portfolyo linkiyle yazabilirsin.</p>
-            </div>
-        </div>
-
-        <div class="member">
-            <div class="avatar ghost">+</div>
-            <div>
-                <h3>Artist / UI</h3>
-                <p class="role">Visual & UI (yakında)</p>
-                <p class="mini">Stil kılavuzu ve arayüz üretimi.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Updates -->
-<section id="updates" class="section">
-    <div class="section-head">
-        <h2>Güncellemeler</h2>
-        <p>Devlog tarzı kısa notlar.</p>
-    </div>
-
-    <div class="updates">
-        <div class="update">
-            <div class="date">2026 • Şubat</div>
-            <div class="u-title">zngl.me yayında</div>
-            <div class="u-text">GitHub Pages + özel domain ile portfolyo alanı kuruldu.</div>
-        </div>
-
-        <div class="update">
-            <div class="date">2026 • Şubat</div>
-            <div class="u-title">Google Workspace kurulumu</div>
-            <div class="u-text">hello@zngl.me altyapısı hazırlanıyor (DNS doğrulama bekleniyor).</div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section alt">
-    <div class="section-head">
-        <h2>İletişim</h2>
-        <p>İş birliği, yayıncı görüşmesi, press kit.</p>
-    </div>
-
-    <div class="contact">
-        <div class="contact-card">
-            <h3>Mail</h3>
-            <p>
-                <span class="mono">hello@zngl.me</span><br/>
-                (Workspace doğrulanınca aktif)
-            </p>
-            <a class="btn primary" id="mailBtn" href="#">Mail yaz</a>
-            <p class="hint">Şimdilik yönlendirelim: doğrulana kadar Gmail’e açılabilir.</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>Linkler</h3>
-            <p class="mono">
-                GitHub: <a class="link" href="https://github.com/Szngl" target="_blank" rel="noreferrer">github.com/Szngl</a><br/>
-                Site: <a class="link" href="https://zngl.me" target="_blank" rel="noreferrer">zngl.me</a>
-            </p>
-            <button class="btn ghost" id="copyBtn">Site linkini kopyala</button>
-            <p class="hint" id="copyHint"></p>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div>© <span id="year"></span> ZNGL Studio</div>
-    <div class="footer-right">
-        <a class="link" href="#top">Yukarı</a>
-    </div>
-</footer>
-
-<script src="script.js"></script>
+<script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

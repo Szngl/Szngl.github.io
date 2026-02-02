@@ -1,0 +1,109 @@
+﻿<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZMAZER • ZNGL</title>
+  <meta name="description" content="ZMAZER development page — core mechanics progress 40%." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="../index.html">
+      <span class="brand-dot"></span>
+      <span>ZNGL</span>
+      <span class="muted">Indie Game Studio</span>
+    </a>
+    <nav class="menu">
+      <a href="../index.html#projects">Projeler</a>
+      <a href="../index.html#about">Hakkımızda</a>
+      <a href="../index.html#contact">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="card">
+        <div class="card-top">
+          <div>
+            <h1 style="margin:0 0 6px; font-size:34px;">ZMAZER</h1>
+            <div class="tiny muted">Stage: Pre-Alpha</div>
+          </div>
+          <span class="stage">Aktif</span>
+        </div>
+
+        <p class="muted" style="margin-top:10px;">
+          Zmazer, maze/puzzle temelli bir oynanışa sahip. Şu anda çekirdek mekanikler kuruldu ve %40 seviyesinde.
+          Görsel kimlik, seviye tasarımı ve UI katmanına geçiş hazırlığındayız.
+        </p>
+
+        <div class="progress-block">
+          <div class="progress-top">
+            <span class="muted">Mekanikler İlerlemesi</span>
+            <strong>%40</strong>
+          </div>
+          <div class="progress">
+            <div class="bar" style="width:40%"></div>
+          </div>
+          <div class="tiny muted" style="margin-top:10px;">
+            Not: Yüzde, “playable core loop” hedefi baz alınarak güncellenir.
+          </div>
+        </div>
+      </div>
+
+      <div class="grid two" style="margin-top:14px;">
+        <div class="card">
+          <h3>Durum Özeti</h3>
+          <ul class="list">
+            <li>✅ Çekirdek mekanikler: %40</li>
+            <li>⏳ Tasarım / görsel dil: başlanmadı</li>
+            <li>⏳ Seviye tasarımı: başlanmadı</li>
+            <li>⏳ UI/UX: planlı</li>
+            <li>⏳ Ses/Müzik: planlı</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Şu Anki Odak</h3>
+          <ul class="list">
+            <li>🎨 Görsel kimlik (renk, stil, UI yaklaşımı)</li>
+            <li>🧱 Level structure (zorluk eğrisi, bölümleme)</li>
+            <li>✨ Game feel (feedback, VFX/SFX planı)</li>
+            <li>🧪 Playtest döngüsü</li>
+          </ul>
+          <div class="row">
+            <a class="btn small" href="../index.html">← Ana sayfa</a>
+            <a class="btn small primary" href="../index.html#contact">İletişim</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Gelişim Notu</h3>
+        <p class="muted">
+          Şu aşamada hedefimiz: mekanikleri stabilize edip, hızlı bir “vertical slice” için görsel + seviye temelini atmak.
+        </p>
+        <div class="tiny muted">
+          Son güncelleme: bugün • Sonraki milestone: Visual direction + Level blockout
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div class="tiny muted">© <span id="y"></span> ZNGL</div>
+    <div class="tiny muted">Zmazer — Dev Page</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
