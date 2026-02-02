@@ -85,25 +85,98 @@
       <div class="card" style="margin-top:14px;">
         <h3>Gelişim Notu</h3>
         <p class="muted">
-          Şu aşamada hedefimiz: mekanikleri stabilize edip, hızlı bir “vertical slice” için görsel + seviye temelini atmak.
+          Geliştirme Notu devlog 1. versiyon sayfanın altındaki kısımdan yayınlanmaya başladı kontrol edebilirsiniz
         </p>
         <div class="tiny muted">
-          Son güncelleme: bugün • Sonraki milestone: Visual direction + Level blockout
+          Son güncelleme: 02.02.2026 •
+        </div>
+      </div>
+
+      <!-- Devlog Section -->
+      <div class="section-head" style="margin-top:40px;">
+        <h2>Devlog</h2>
+        <p class="muted">Geliştirme sürecimizi paylaştığımız güncellemeler.</p>
+      </div>
+
+
+          <div class="devlog-divider"></div>
+
+          <!-- Devlog 1 -->
+          <div class="devlog-item" onclick="openDevlog(1)">
+            <div class="devlog-item-left">
+              <div class="devlog-number-badge">#1</div>
+              <div class="devlog-item-info">
+                <h4 class="devlog-item-title">Devlog #1</h4>
+                <div class="tiny muted">15 Ocak 2026 • Proje Başlangıcı ve İlk Prototipler</div>
+              </div>
+            </div>
+            <div class="devlog-item-action">
+              <span class="devlog-view-text">Görüntüle</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Devlog Modal -->
+  <div id="devlogModal" class="devlog-modal">
+    <div class="devlog-modal-overlay" onclick="closeDevlog()"></div>
+    <div class="devlog-modal-content">
+      <div class="devlog-modal-header">
+        <h2 id="modalTitle">Devlog</h2>
+        <button class="modal-close" onclick="closeDevlog()">&times;</button>
+      </div>
+      <div class="devlog-modal-body">
+        <iframe id="devlogFrame" src=""></iframe>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="site-footer">
   <div class="container footer-row">
-    <div class="tiny muted">© <span id="y"></span> ZNGL</div>
-    <div class="tiny muted">Zmazer — Dev Page</div>
+    <div class="tiny muted">© <span id="y"></span> Servet Uzunoğlu — All rights reserved.</div>
+    <div class="tiny muted">Built with GitHub Pages.</div>
   </div>
 </footer>
 
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
+
+  // Devlog Modal Functions
+  function openDevlog(number) {
+    const modal = document.getElementById('devlogModal');
+    const iframe = document.getElementById('devlogFrame');
+    const title = document.getElementById('modalTitle');
+
+    // PDF yolu
+    iframe.src = `../docs/devlog/zmazer_devlog${number}.pdf`;
+    title.textContent = `Devlog #${number}`;
+
+    // Modal'ı aç
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDevlog() {
+    const modal = document.getElementById('devlogModal');
+    const iframe = document.getElementById('devlogFrame');
+
+    modal.classList.remove('active');
+    iframe.src = '';
+    document.body.style.overflow = 'auto';
+  }
+
+  // ESC tuşuyla kapat
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeDevlog();
+    }
+  });
 </script>
 </body>
 </html>
