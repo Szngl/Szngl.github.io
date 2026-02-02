@@ -1,0 +1,1 @@
+# Szngl.github.io
